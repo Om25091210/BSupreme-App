@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:clickable="false"
+    android:orientation="vertical"
+    app:cardCornerRadius="13dp"
+    android:id="@+id/cardViewdesc"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="257dp"
+        android:background="@drawable/des_round_bottom_nav_corners"
+        android:orientation="vertical">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="3dp">
+
+    <ImageView
+        android:id="@+id/card_image"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:scaleType="centerCrop"
+        android:elevation="2dp"
+        android:src="@color/teal_dark"
+        />
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+        <TextView
+            android:id="@+id/card_name"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:fontFamily="@font/nunito_extra_bold"
+            android:paddingHorizontal="15dp"
+            android:text="Hotel Name"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="19dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+
+            <TextView
+                android:id="@+id/card_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="15dp"
+                android:fontFamily="@font/nunito_regular"
+                android:text="Non-Veg \u2022 Resto-bar \u2022 Stay"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/card_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/card_hotel_star"
+                android:fontFamily="@font/nunito_semi_bold"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/card_hotel_star"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_round_star_white" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+
+            <ImageView
+                android:id="@+id/card_hotel_loc_white"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_round_location_on_white" />
+
+
+            <TextView
+                android:id="@+id/card_location"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/card_hotel_loc_white"
+                android:fontFamily="@font/nunito_light"
+                android:text="This is Hotel Location"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

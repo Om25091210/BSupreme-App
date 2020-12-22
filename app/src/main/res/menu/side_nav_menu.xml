@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/home_side_nav"
+                android:icon="@drawable/ic_round_home_white"
+                android:iconTint="@color/black"
+                android:title="Home" />
+            <item
+
+                android:id="@+id/profile_side_nav"
+                android:icon="@drawable/ic_person"
+                android:iconTint="@color/black"
+                android:title="Profile"
+                />
+            <item
+                android:id="@+id/bookings_side_nav"
+                android:icon="@drawable/ic_bookings"
+                android:iconTint="@color/black"
+                android:title="Bookings" />
+        </group>
+
+
+        <item android:title="Info Actions" >
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/about_us_side_nav"
+                        android:icon="@drawable/ic_about"
+                        android:iconTint="@color/black"
+                        android:title="About Us" />
+                    <item
+                        android:id="@+id/rate_us_side_nav"
+                        android:icon="@drawable/ic_rate_review"
+                        android:iconTint="@color/black"
+                        android:title="Rate Us" />
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="Logout">
+            <menu>
+                <group android:checkableBehavior="single">
+
+                    <item
+                        android:id="@+id/logout_side_nav"
+                        android:icon="@drawable/ic_logout"
+                        android:iconTint="@color/black"
+                        android:title="Logout" />
+                </group>
+            </menu>
+        </item>
+
+
+<!--    <group android:checkableBehavior="single">-->
+<!--        <item-->
+<!--            android:id="@+id/profile_side_nav"-->
+<!--            android:icon="@drawable/ic_person"-->
+<!--            android:iconTint="@color/black"-->
+<!--            android:title="Profile" />-->
+<!--        <item-->
+<!--            android:id="@+id/bookings_side_nav"-->
+<!--            android:icon="@drawable/ic_bookings"-->
+<!--            android:iconTint="@color/black"-->
+<!--            android:title="Bookings" />-->
+<!--    </group>-->
+
+
+<!--    <group android:checkableBehavior="single">-->
+<!--        <item-->
+<!--            android:id="@+id/about_us_side_nav"-->
+<!--            android:icon="@drawable/ic_about"-->
+<!--            android:iconTint="@color/black"-->
+<!--            android:title="About Us" />-->
+<!--        <item-->
+<!--            android:id="@+id/share_side_nav"-->
+<!--            android:icon="@drawable/ic_share"-->
+<!--            android:iconTint="@color/black"-->
+<!--            android:title="Share" />-->
+<!--        <item-->
+<!--            android:id="@+id/rate_us_side_nav"-->
+<!--            android:icon="@drawable/ic_rate_review"-->
+<!--            android:iconTint="@color/black"-->
+<!--            android:title="Rate Us" />-->
+<!--    </group>-->
+
+
+<!--    <group android:checkableBehavior="single">-->
+
+<!--        <item-->
+<!--            android:id="@+id/logout_side_nav"-->
+<!--            android:icon="@drawable/ic_logout"-->
+<!--            android:iconTint="@color/black"-->
+<!--            android:title="Logout" />-->
+<!--    </group>-->
+
+
+</menu>

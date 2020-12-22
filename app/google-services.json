@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "241302989386",
+    "project_id": "b-supreme",
+    "storage_bucket": "b-supreme.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241302989386:android:92d16dd10a3fc7bb19d4b3",
+        "android_client_info": {
+          "package_name": "com.example.bsupreme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "241302989386-p1gp0adlrbn0l3rcuq62kjo94r67peg5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDs_ykTjEKzCfHcU9hxXjtYNovnWF0fQFY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "241302989386-p1gp0adlrbn0l3rcuq62kjo94r67peg5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.BookTableActivity"
+    android:elevation="0dp"
+    android:orientation="vertical">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tablebookingLottieCard"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_alignParentTop="true"
+        app:cardElevation="0dp"
+        android:background="@color/white"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/Tbooking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Table Bookings"
+                android:textAlignment="center"
+                android:background="@color/white"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:padding="10dp"
+                android:elevation="0dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/lottie_man_travel"
+                android:layout_below="@id/Tbooking"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:lottie_autoPlay="true"
+                android:background="@color/white"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/tablebooking_white" />
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/des_booking_screen_bg"
+        android:layout_below="@id/tablebookingLottieCard"
+        >
+        <TextView
+            android:elevation="5dp"
+            android:id="@+id/bookingHotelName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Hotel Name"
+            android:fontFamily="@font/nunito_semi_bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_alignParentTop="true"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bookingTableRecyclerView"
+            android:layout_below="@+id/bookingHotelName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="60dp"/>
+
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_twotone_cancel"
+            android:background="@drawable/des_img_button"
+            android:elevation="8dp"
+            android:tint="@color/teal_dark"
+            android:layout_marginBottom="15dp"
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

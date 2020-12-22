@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:padding="15dp"
+        app:cardCornerRadius="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:id="@+id/confirmHotelname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="#00000000"
+                android:text="This is the Hotel Name for booking"
+                android:fontFamily="@font/nunito_semi_bold"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:layout_marginVertical="5dp"
+                />
+
+            <TextView
+                android:id="@+id/confirmBookingText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirmHotelname"
+                android:text="Confirm Table Booking for"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:layout_marginVertical="10dp"
+                />
+
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/table_booking_card_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirmBookingText"
+                android:layout_margin="10dp"
+                android:background="@color/black"
+                android:clickable="false"
+                android:elevation="0dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="20dp"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/des_booking_table_card_round"
+                    android:elevation="0dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/confirmtableSeats"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/nunito_bold"
+                        android:gravity="center"
+                        android:text="10"
+                        android:textSize="25dp" />
+
+                    <ImageView
+                        android:id="@+id/seatIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/confirmtableSeats"
+                        android:src="@drawable/ic_twotone_seat" />
+
+                    <View
+                        android:id="@+id/verticalBar"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toEndOf="@id/seatIcon"
+                        android:background="@color/teal_darkest" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_toEndOf="@+id/verticalBar"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:id="@+id/confirmAcIndicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/detailsVegNonVeg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:src="@drawable/ic_ac_table"
+                                app:tint="@color/teal_darkest" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_extra_bold"
+                                android:text="AC"
+                                android:textAlignment="center"
+                                android:textColor="@color/teal_darkest"
+                                android:textSize="13dp" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/confirmBarIndicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/detailsBarNoBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center_horizontal"
+
+                                android:layout_weight="1"
+                                android:src="@drawable/ic_near_wine_bar"
+                                app:tint="@color/teal_darkest" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_extra_bold"
+                                android:text="BAR"
+                                android:textAlignment="center"
+                                android:textColor="@color/teal_darkest"
+                                android:textSize="13dp" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/confirmGrillIndicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/detailsStayNoStay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:src="@drawable/ic_outdoor_grill"
+                                app:tint="@color/teal_darkest" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_extra_bold"
+                                android:text="GRILL"
+                                android:textAlignment="center"
+                                android:textColor="@color/teal_darkest"
+                                android:textSize="13dp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/bookingDate"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/table_booking_card_view"
+                android:text="Date: 12 December 2020"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_marginTop="30dp"
+                />
+
+            <TextView
+                android:layout_margin="5dp"
+                android:id="@+id/bookingTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bookingDate"
+                android:text="Time: 00:00 pm - 00:00 pm"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                />
+
+            <LinearLayout
+                android:id="@+id/buttonLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/bookingTime"
+                android:layout_marginTop="30dp"
+                >
+
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/cancelBookingButton"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/red"
+                    android:text="Cancel "
+                    android:fontFamily="@font/nunito_extra_bold"
+                    android:layout_marginHorizontal="10dp"
+                    />
+
+
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/confirmBookingButton"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/green"
+                    android:text="Confirm  "
+                    android:fontFamily="@font/nunito_extra_bold"
+                    android:layout_marginHorizontal="10dp"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
